@@ -1,0 +1,16 @@
+[project]
+name = "glean-server"
+version = "0.1.0"
+description = "A simple MCP glean chat server"
+requires-python = ">=3.10"
+dependencies = [
+    "httpx>=0.28.1",
+    "mcp[cli]>=1.2.0",
+]
+
+[build-system]
+requires = [ "hatchling",]
+build-backend = "hatchling.build"
+
+[project.scripts]
+glean = "glean_server:main"
